@@ -1,0 +1,10 @@
+Server=<%= node['var']['zabbixserver'] %>
+ServerActive=<%= node['var']['zabbixserver'] %>
+HostnameItem=system.hostname
+Include=/etc/zabbix/zabbix_agentd.d/
+EnableRemoteCommands=1
+LogRemoteCommands=1
+AllowRoot=1
+LogFile=/var/log/zabbix/zabbix_agentd.log
+LogFileSize=0
+Timeout=30
